@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 1000px;
+            height: 600px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        .img{
+           width: 50%;
+           height: 100%;
+           float: left;
+           background-image: url("https://i.namu.wiki/i/ImSm8Yu1bL5ojWlfAWWpfZRkD0uBnl61DOemJvxXZVYDf5tgTi4pkSnR3asTmMcIgAi37xZ14t-C8ZOlDGioPg.webp");
+           background-position: center;
+           background-size: cover; 
+        }
+
+        .order_menu{
+            width: 49%;
+            height: 100%;
+            float: right;
+        }
+
+        .info{
+            margin-left: 25px;
+        }
+
+        .info p{
+            font-size: xx-large;
+            text-align: right;
+            margin-right: 35px;
+        }
+
+        .order_info{
+            width: 440px;
+            margin-left: 25px;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+
+        .order_info p{
+            margin-left: 10px;
+        }
+
+        .order{
+            margin-top: 15px;
+            margin-left: 25px;
+        }
+
+        .order select{
+            width: 440px;
+            height: 30px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .order input{
+            width: 430px;
+            height: 30px;
+        }
+
+        .order button{
+            width: 217px;
+            height: 35px;
+            margin-top: 10px;
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img"></div>
+        <div class="order_menu">
+            <div class="info">
+                <h2>고당도 씨없는 수박</h2>
+                <p><span style="color: red;">32000원</span></p>
+            </div>
+            <div class="order_info">
+                <p>택배배송 | 무료배송 - 00택배<br>제주 추가 3,000원, 제주 외 도서지역 추가 5,000원</p>
+            </div>
+            <div class="order">
+                <select>
+                    <option value="">오후 3시 이전 주문 시 오늘 출발</option>
+                    <option value="">씨 있는 일반 수박</option>
+                    <option value="">고당도 씨 없는 수박</option>
+                </select><br>
+                <select>
+                    <option value="">무게 선택</option>
+                    <option value="">5KG</option>
+                    <option value="">6KG (+4500원)</option>
+                </select>
+                <div style="margin-top: 10px;">수량 <br><input type="number" min="1" max="99" style="width: 50px; height: 20px; border-radius: 5px;"></div>
+                <div style="margin-top: 15px;">주문자 이름<input type="text" placeholder="이름을 입력해주세요"></div>
+                <div>주소 <input type="text" placeholder="주소를 입력해주세요"></div>
+                <button>장바구니</button>
+                <button>주문하기</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

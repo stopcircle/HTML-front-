@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            border: 1px solid black;
+        }
+        
+        .head{
+            border-bottom: 1px solid black;
+            margin: 20px;
+        }
+
+        .info{
+            margin: 20px;
+        }
+
+        .info li {
+           padding-top: 20px;
+        }
+
+        .select{
+            margin: 20px;
+        }
+
+        .support{
+            margin: 20px;
+        }
+
+        .support textarea{
+            width: 100%;
+            height: 100px;
+        }
+
+        .button_div{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>프론트엔드 개발자 지원서</h1>
+            <p>HTML,CSS,javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+        </div>
+
+        <div class="info">
+            <h2>개인정보</h2>
+            <ul>
+                <li>이름<input type="text" placeholder="공백없이 입력하세요"></li>
+                <li>연락처<input type="text"></li>
+            </ul>
+        </div>
+
+        <div class="select">
+            <h2> 지원 분야</h2>
+            <ul>
+                <li><input type="radio" id="1"><label for="1">웹 퍼블리싱</label></li>
+                <li><input type="radio" id="2"><label for="2">웹 애플리케이션 개발</label></li>
+                <li><input type="radio" id="3"><label for="3">개발 환경 개선</label></li>
+            </ul>
+        </div>
+
+        <div class="support">
+            <h2>지원 동기</h2>
+            <textarea placeholder="본사 지원 동기를 간략히 써 주세요"></textarea>
+        </div>
+        <div class="button_div">
+            <button>접수하기</button>
+            <button>다시쓰기</button>
+        </div>
+    </div>
+</body>
+</html>
